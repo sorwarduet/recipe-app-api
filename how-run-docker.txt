@@ -17,4 +17,13 @@ Step 5:
     Run project
         docker-compose up
 
+How check docker running image
+
+#docker ps
+
+How access docker database image
+sorwar@sorwar:~$ docker exec -it ec8a789a16e6 bash #here ec8a789a16e6 CONTAINER ID
+bash-5.1# psql -U postgres
+
+
 
