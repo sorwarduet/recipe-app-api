@@ -3,7 +3,7 @@ Step 1:
 
 Step 2:
     Create Dockerfile
-    then run command  # docker build
+    then run command  # docker build .
 
 Step 3:
     Create docker-compose.yml file

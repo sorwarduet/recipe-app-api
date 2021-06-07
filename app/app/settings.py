@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
      'rest_framework.authtoken',
     'core',
-    'user'
+    'user',
+    'recipe',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +73,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'app.wsgi.application'
+
+AUTH_USER_MODEL = 'core.User'
 
 
 # Database
