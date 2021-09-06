@@ -1,6 +1,4 @@
 from rest_framework.generics import CreateAPIView, RetrieveUpdateAPIView
-# from rest_framework.authentication import TokenAuthentication
-# from rest_framework.permissions import IsAuthenticated
 from rest_framework import authentication, permissions
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.settings import api_settings
@@ -9,7 +7,6 @@ from .serializers import UserSerializer, AuthTokenSerializer
 
 class CreateUserView(CreateAPIView):
     """Create the new user in the system"""
-
     serializer_class = UserSerializer
 
 
